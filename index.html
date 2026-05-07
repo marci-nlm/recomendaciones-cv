@@ -21,8 +21,8 @@
 
     body {
       font-family: 'Lato', sans-serif;
-      font-size: 15px;
-      line-height: 1.8;
+      font-size: 16.5px;
+      line-height: 1.75;
       color: var(--text);
       background: var(--bg);
     }
@@ -94,9 +94,10 @@
       color: var(--primary);
       margin-bottom: 0.6rem;
     }
-    .toc ol {
-      padding-left: 1.3rem;
-      font-size: 0.9rem;
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
       line-height: 1.9;
     }
     .toc a { color: var(--text); text-decoration: none; }
@@ -124,7 +125,7 @@
     }
     .section h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
+      font-size: 1.45rem;
       font-weight: 600;
       color: var(--dark);
     }
@@ -157,21 +158,35 @@
       background: var(--white);
       border: 1.5px solid var(--primary-light);
       border-radius: 6px;
-      padding: 0.85rem 1.2rem;
+      padding: 0.95rem 1.25rem;
       margin: 1rem 0;
-      font-size: 0.94rem;
+      font-size: 1rem;
     }
 
     /* ── EXAMPLE QUOTE ────────────────────────────────── */
     .example {
       background: var(--white);
       border-left: 3px solid var(--primary);
-      padding: 0.8rem 1.2rem;
+      padding: 0.9rem 1.25rem;
       margin: 0.8rem 0;
       font-style: italic;
       color: var(--muted);
       border-radius: 0 5px 5px 0;
-      font-size: 0.93rem;
+      font-size: 1rem;
+    }
+
+    /* ── TRUST NOTE ────────────────────────────────────── */
+    .trust-note {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      color: var(--primary);
+      background: var(--white);
+      border: 1.5px solid var(--primary-light);
+      border-radius: 999px;
+      padding: 0.75rem 1.2rem;
+      margin: 1.25rem 0 1.45rem;
     }
 
     /* ── SUBSECTION HEADING (within a section) ────────── */
@@ -262,16 +277,16 @@
   <!-- ── TABLE OF CONTENTS ──────────────────────────────── -->
   <nav class="toc">
     <p class="toc-title">Contenido</p>
-    <ol start="0">
-      <li><a href="#s0">Primero lee esto: resumen práctico</a></li>
-      <li><a href="#s1">Dirección del CV</a></li>
-      <li><a href="#s2">Diseño y estructura general</a></li>
-      <li><a href="#s25">Portafolio — estructura y diseño</a></li>
-      <li><a href="#s3">Acerca de mí</a></li>
-      <li><a href="#s4">Experiencia laboral</a></li>
-      <li><a href="#s5">Programas, proyectos, referencias y hobbies</a></li>
-      <li><a href="#s6">TL;DR: Consejos prácticos</a></li>
-    </ol>
+    <ul>
+      <li><a href="#s0">0. Primero lee esto: resumen práctico</a></li>
+      <li><a href="#s1">1. Dirección del CV</a></li>
+      <li><a href="#s2">2. Diseño y estructura general</a></li>
+      <li><a href="#s25">2.5 Portafolio: estructura y diseño</a></li>
+      <li><a href="#s3">3. Acerca de mí</a></li>
+      <li><a href="#s4">4. Experiencia laboral</a></li>
+      <li><a href="#s5">5. Programas, proyectos, referencias y hobbies</a></li>
+      <li><a href="#s6">6. Checklist final</a></li>
+    </ul>
   </nav>
 
   <!-- ── SECTION 0 ───────────────────────────────────────── -->
@@ -308,7 +323,9 @@
     <p><strong>8. Cambia referencias por una nota breve</strong><br>
     En vez de poner teléfonos directamente, puedes poner: "Referencias laborales disponibles bajo petición."</p>
 
-    <p>No tienes que resolver todo hoy. Empieza por decidir a qué tipo de trabajo quieres aplicar y luego ajusta el CV y el portafolio para ese perfil específico. Paso a paso. En la sección <strong>#6</strong> tienes un resumen práctico de todo esto, pero un poco más detallado. De la sección <strong>#1</strong> a la <strong>#5</strong> te doy recomendaciones más específicas sobre cada parte del CV y el portafolio, con ejemplos de cómo podrías reescribir o reorganizar la información.</p>
+    <p>No tienes que resolver todo hoy. Empieza por decidir a qué tipo de trabajo quieres aplicar y luego ajusta el CV y el portafolio para ese perfil específico. Paso a paso. Al final tienes una <strong>checklist rápida</strong> para revisar los cambios sin tener que releer todo el documento. De la sección <strong>#1</strong> a la <strong>#5</strong> te doy recomendaciones más específicas sobre cada parte del CV y el portafolio, con ejemplos de cómo podrías reescribir o reorganizar la información.</p>
+
+    <div class="trust-note">✨ Confía en mí que yo confío en ti ✨</div>
   </section>
 
   <!-- ── SECTION 1 ───────────────────────────────────────── -->
@@ -518,10 +535,10 @@
   <section class="section-callout" id="s6">
     <div class="section-header">
       <span class="section-number">6.</span>
-      <h2>TL;DR: Consejos prácticos</h2>
+      <h2>Checklist final</h2>
     </div>
 
-    <p>Si sientes que hay demasiada información y no sabes por dónde empezar, aquí está todo resumido. Haz esto:</p>
+    <p>Cuando quieras empezar a editar el CV, puedes usar esta lista como checklist rápida:</p>
 
     <div class="tldr-group">
       <p class="tldr-group-title">Antes de tocar el CV:</p>
