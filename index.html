@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendaciones para CV</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f4f7fb;
+      --surface: #ffffff;
+      --primary: #1d4ed8;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #dbe3ef;
+      --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--background) 100%);
+      color: var(--text);
+    }
+
+    main {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 40px 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin: 24px 0 0;
+      padding-left: 20px;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(29, 78, 216, 0.1);
+      color: var(--primary);
+      font-weight: bold;
+      letter-spacing: 0.02em;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <span class="badge">GitHub Pages</span>
+      <h1>Recomendaciones para mejorar tu CV</h1>
+      <p>
+        Esta página está lista para publicarse como un sitio estático en GitHub Pages.
+        Resume recomendaciones claras y prácticas para presentar mejor tu experiencia.
+      </p>
+      <ul>
+        <li>Destaca logros concretos con resultados medibles.</li>
+        <li>Adapta el perfil profesional al puesto que buscas.</li>
+        <li>Ordena la información por relevancia y mantén un diseño limpio.</li>
+        <li>Incluye habilidades y herramientas alineadas con tu experiencia real.</li>
+      </ul>
+      <footer>
+        Publica este repositorio con GitHub Pages usando la rama principal y la carpeta raíz.
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
